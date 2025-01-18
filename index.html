@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>R Notes</title>
+  <link rel="stylesheet" href="2.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+<center><h1>Selamat Datang Di R-Notes</h1></center>
+  <!-- Form Login -->
+  <div class="login-box" id="login-box">
+    <h2>Login First</h2>
+    <form id="login-form">
+      <div class="row">
+        <label for="username">Username</label>
+        <input type="text" id="username" required>
+      </div>
+      <div class="row">
+        <label for="password">Password</label>
+        <input type="password" id="password" required>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+  <button onclick="logout()" style="position: fixed; top: 10px; right: 10px; background-color: #626CD6; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer;">
+    Logout
+  </button>
+  <div class="popup-box">
+    <div class="popup">
+      <div class="content">
+        <header>
+          <p></p>
+          <i class="uil uil-times"></i>
+        </header>
+        <form action="#">
+          <div class="row title">
+            <label>Title</label>
+            <input type="text" spellcheck="false">
+          </div>
+          <div class="row description">
+            <label>Description</label>
+            <textarea spellcheck="false"></textarea>
+          </div>
+          <button></button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <li class="add-box">
+      <div class="icon"><i class="uil uil-plus"></i></div>
+      <p>Add new note</p>
+    </li>
+  </div>
+  
+  <script src="3.js"></script>
+</body>
+</html>
